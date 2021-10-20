@@ -1,0 +1,17 @@
+C:\Users\99555\source\repos\ServiceLayer\bin\Debug\netstandard2.0\ServiceLayer.deps.json
+C:\Users\99555\source\repos\ServiceLayer\bin\Debug\netstandard2.0\ServiceLayer.dll
+C:\Users\99555\source\repos\ServiceLayer\bin\Debug\netstandard2.0\EventManager.Data.dll
+C:\Users\99555\source\repos\ServiceLayer\bin\Debug\netstandard2.0\EventManager.DataEF.dll
+C:\Users\99555\source\repos\ServiceLayer\bin\Debug\netstandard2.0\EventManager.Domain.dll
+C:\Users\99555\source\repos\ServiceLayer\bin\Debug\netstandard2.0\EventManager.DataEF.pdb
+C:\Users\99555\source\repos\ServiceLayer\bin\Debug\netstandard2.0\EventManager.Data.pdb
+C:\Users\99555\source\repos\ServiceLayer\bin\Debug\netstandard2.0\EventManager.Domain.pdb
+C:\Users\99555\source\repos\ServiceLayer\obj\Debug\netstandard2.0\ServiceLayer.AssemblyInfoInputs.cache
+C:\Users\99555\source\repos\ServiceLayer\obj\Debug\netstandard2.0\ServiceLayer.AssemblyInfo.cs
+C:\Users\99555\source\repos\ServiceLayer\obj\Debug\netstandard2.0\ServiceLayer.csproj.CopyComplete
+C:\Users\99555\source\repos\ServiceLayer\bin\Debug\netstandard2.0\EventManager.PersistenceDB.dll
+C:\Users\99555\source\repos\ServiceLayer\bin\Debug\netstandard2.0\EventManager.PersistenceDB.pdb
+C:\Users\99555\source\repos\ServiceLayer\obj\Debug\netstandard2.0\ServiceLayer.csprojAssemblyReference.cache
+C:\Users\99555\source\repos\ServiceLayer\bin\Debug\netstandard2.0\ServiceLayer.pdb
+C:\Users\99555\source\repos\ServiceLayer\obj\Debug\netstandard2.0\ServiceLayer.dll
+C:\Users\99555\source\repos\ServiceLayer\obj\Debug\netstandard2.0\ServiceLayer.pdb

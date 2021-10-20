@@ -1,0 +1,77 @@
+﻿@model IEnumerable<UserSideEventManager.Models.Event>
+@using X.PagedList.Mvc.Core;
+@using X.PagedList;
+
+@{
+    ViewData["Title"] = "UserEvents";
+}
+
+<h1 style="font-family: Garamond, serif" class="font-weight-bolder">My Events</h1>
+
+<p>
+    <a asp-action="Create" class="text-dark">Create New Event</a>
+</p>
+<table class="table bg-white" style="border-radius: 10px">
+    <thead>
+        <tr>
+
+            <th>
+                @Html.DisplayNameFor(model => model.Title)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Description)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StartDate)
+            </th>
+
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr class="font-weight-bold">
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.Title)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Description)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.StartDate)
+                </td>
+
+                <td>
+                    <form action="/Event/Details/@item.Id">
+                        <input type="submit" value="Details" class="btn btn-success" />
+                    </form>
+                </td>
+
+                <td>
+                    <form action="/Event/Edit/@item.Id">
+                        <input type="submit" value="Edit" class="btn btn-warning" />
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@Html.PagedListPager((IPagedList)Model, page => Url.Action("UserEvents", new { page = page }),
+        new X.PagedList.Web.Common.PagedListRenderOptions
+        {
+            DisplayItemSliceAndTotal = true,
+            ContainerDivClasses = new[] { "navigation" },
+            LiElementClasses = new[] { "page-item" },
+            PageClasses = new[] { "page-link" },
+        })
+
+@section Scripts{
+    <script>
+        $(document).ready(function () {
+            $('ul.pagination > li.disabled > a').addClass('page-link');
+        });
+    </script>
+}

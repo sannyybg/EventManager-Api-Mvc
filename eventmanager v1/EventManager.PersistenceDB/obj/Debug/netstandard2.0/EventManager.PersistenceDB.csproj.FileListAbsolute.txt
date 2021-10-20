@@ -1,0 +1,11 @@
+C:\Users\99555\source\repos\EventManager.PersistenceDB\bin\Debug\netstandard2.0\EventManager.PersistenceDB.deps.json
+C:\Users\99555\source\repos\EventManager.PersistenceDB\bin\Debug\netstandard2.0\EventManager.PersistenceDB.dll
+C:\Users\99555\source\repos\EventManager.PersistenceDB\obj\Debug\netstandard2.0\EventManager.PersistenceDB.AssemblyInfoInputs.cache
+C:\Users\99555\source\repos\EventManager.PersistenceDB\obj\Debug\netstandard2.0\EventManager.PersistenceDB.AssemblyInfo.cs
+C:\Users\99555\source\repos\EventManager.PersistenceDB\bin\Debug\netstandard2.0\EventManager.PersistenceDB.pdb
+C:\Users\99555\source\repos\EventManager.PersistenceDB\obj\Debug\netstandard2.0\EventManager.PersistenceDB.csprojAssemblyReference.cache
+C:\Users\99555\source\repos\EventManager.PersistenceDB\obj\Debug\netstandard2.0\EventManager.PersistenceDB.dll
+C:\Users\99555\source\repos\EventManager.PersistenceDB\obj\Debug\netstandard2.0\EventManager.PersistenceDB.pdb
+C:\Users\99555\source\repos\EventManager.PersistenceDB\bin\Debug\netstandard2.0\EventManager.Domain.dll
+C:\Users\99555\source\repos\EventManager.PersistenceDB\bin\Debug\netstandard2.0\EventManager.Domain.pdb
+C:\Users\99555\source\repos\EventManager.PersistenceDB\obj\Debug\netstandard2.0\EventManager.PersistenceDB.csproj.CopyComplete

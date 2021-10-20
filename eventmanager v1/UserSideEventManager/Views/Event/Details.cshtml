@@ -1,0 +1,54 @@
+﻿@model UserSideEventManager.Models.Event
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1 class="font-weight-bold text-dark">Event Details</h1>
+
+<img src="@Model.PhotoUrl" alt="Italian Trulli" style="width:450px; height:300px; border-radius:8px"><br>
+<div>
+    <hr />
+    
+    <dl class="row font-weight-bold" style="font-size:22px">
+        <dt class="col-sm-2 text-secondary">
+            Event Identifier
+        </dt>
+        <dd class="col-sm-10" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">
+            @Html.DisplayFor(model => model.Id)
+        </dd>
+        <dt class="col-sm-2 text-secondary">
+            @Html.DisplayNameFor(model => model.Title)
+        </dt>
+        <dd class="col-sm-10" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">
+            @Html.DisplayFor(model => model.Title)
+        </dd>
+        <dt class="col-sm-2 text-secondary">
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+        <dd class="col-sm-10" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+        <dt class="col-sm-2 text-secondary">
+            @Html.DisplayNameFor(model => model.StartDate)
+        </dt>
+        <dd class="col-sm-10" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">
+            @Html.DisplayFor(model => model.StartDate)
+        </dd>
+        <dt class="col-sm-2 text-secondary">
+            Event Holder
+        </dt>
+        <dd class="col-sm-10" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">
+            @Model.User.FirstName @Model.User.LastName
+        </dd>
+        <dt class="col-sm-2 text-secondary">
+            Contact
+        </dt>
+        <dd class="col-sm-10" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">
+            @Model.User.Email
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Index" asp-controller="Home" class="font-weight-bolder">Home</a>
+</div>

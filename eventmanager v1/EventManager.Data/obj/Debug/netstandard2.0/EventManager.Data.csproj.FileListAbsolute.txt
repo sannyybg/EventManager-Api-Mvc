@@ -1,0 +1,11 @@
+C:\Users\99555\source\repos\EventManager.Data\bin\Debug\netstandard2.0\EventManager.Data.deps.json
+C:\Users\99555\source\repos\EventManager.Data\bin\Debug\netstandard2.0\EventManager.Data.dll
+C:\Users\99555\source\repos\EventManager.Data\bin\Debug\netstandard2.0\EventManager.Data.pdb
+C:\Users\99555\source\repos\EventManager.Data\bin\Debug\netstandard2.0\EventManager.Domain.dll
+C:\Users\99555\source\repos\EventManager.Data\bin\Debug\netstandard2.0\EventManager.Domain.pdb
+C:\Users\99555\source\repos\EventManager.Data\obj\Debug\netstandard2.0\EventManager.Data.csprojAssemblyReference.cache
+C:\Users\99555\source\repos\EventManager.Data\obj\Debug\netstandard2.0\EventManager.Data.AssemblyInfoInputs.cache
+C:\Users\99555\source\repos\EventManager.Data\obj\Debug\netstandard2.0\EventManager.Data.AssemblyInfo.cs
+C:\Users\99555\source\repos\EventManager.Data\obj\Debug\netstandard2.0\EventManager.Data.csproj.CopyComplete
+C:\Users\99555\source\repos\EventManager.Data\obj\Debug\netstandard2.0\EventManager.Data.dll
+C:\Users\99555\source\repos\EventManager.Data\obj\Debug\netstandard2.0\EventManager.Data.pdb

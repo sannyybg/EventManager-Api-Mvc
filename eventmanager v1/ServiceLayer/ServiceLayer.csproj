@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Mapster" Version="7.2.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="5.0.0" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.13.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\EventManager.DataEF\EventManager.DataEF.csproj" />
+    <ProjectReference Include="..\EventManager.Data\EventManager.Data.csproj" />
+    <ProjectReference Include="..\EventManager.PersistenceDB\EventManager.PersistenceDB.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,93 @@
+﻿@model IEnumerable<UserSideEventManager.Models.Event>
+@using X.PagedList.Mvc.Core;
+@using X.PagedList;
+
+@{
+    ViewData["Title"] = "AllEvents";
+}
+
+<h1 style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif" class="text-danger">Upcoming Events</h1>
+
+<p>
+    <a class="text-dark" asp-action="Create">Create New Event</a>
+</p>
+@*<table class="table bg-white rounded">
+    <thead>
+        <tr class="text-danger">
+            <th>
+                @Html.DisplayNameFor(model => model.Title)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Description)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StartDate)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td class="font-weight-bolder">
+                    @Html.DisplayFor(modelItem => item.Title)
+                </td>
+                <td class="font-weight-bold">
+                    @Html.DisplayFor(modelItem => item.Description)
+                </td>
+                <td class="font-weight-bold">
+                    @Html.DisplayFor(modelItem => item.StartDate)
+                </td>
+                <td>
+
+                    <form action="/Event/Details/@item.Id">
+                        <input type="submit" value="Details" class="btn btn-success" />
+                    </form>
+
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>*@
+
+
+@foreach (var item in Model)
+{
+    <div class="row rounded" font-size:18px">
+        <div class="col-sm-5 float-left">
+            <img src="@item.PhotoUrl" alt="Italian Trulli" style="width:100%; height:200px; border-radius:0px"><br>
+            
+        </div>
+        <div class="col-sm-7 font-weight-bold" style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; background-color:powderblue; border-radius:5px">
+            @item.Title<br>
+            @item.Description<br>
+            @item.StartDate<br><br><br>
+
+            <form class="float-right align-bottom" action="/Event/Details/@item.Id">
+                <input type="submit" value="Show Details" class="btn btn-success" />
+            </form>
+
+
+        </div>
+    </div>
+    <br>
+}
+
+
+@Html.PagedListPager((IPagedList)Model, page => Url.Action("AllEvents", new { page = page }),
+        new X.PagedList.Web.Common.PagedListRenderOptions
+        {
+            DisplayItemSliceAndTotal = true,
+            ContainerDivClasses = new[] { "navigation" },
+            LiElementClasses = new[] { "page-item" },
+            PageClasses = new[] { "page-link" },
+        })
+
+@section Scripts{
+    <script>
+        $(document).ready(function () {
+            $('ul.pagination > li.disabled > a').addClass('page-link');
+        });
+    </script>
+}

@@ -1,0 +1,8 @@
+C:\Users\99555\source\repos\EventManager.Domain\bin\Debug\netstandard2.0\EventManager.Domain.deps.json
+C:\Users\99555\source\repos\EventManager.Domain\bin\Debug\netstandard2.0\EventManager.Domain.dll
+C:\Users\99555\source\repos\EventManager.Domain\bin\Debug\netstandard2.0\EventManager.Domain.pdb
+C:\Users\99555\source\repos\EventManager.Domain\obj\Debug\netstandard2.0\EventManager.Domain.csprojAssemblyReference.cache
+C:\Users\99555\source\repos\EventManager.Domain\obj\Debug\netstandard2.0\EventManager.Domain.AssemblyInfoInputs.cache
+C:\Users\99555\source\repos\EventManager.Domain\obj\Debug\netstandard2.0\EventManager.Domain.AssemblyInfo.cs
+C:\Users\99555\source\repos\EventManager.Domain\obj\Debug\netstandard2.0\EventManager.Domain.dll
+C:\Users\99555\source\repos\EventManager.Domain\obj\Debug\netstandard2.0\EventManager.Domain.pdb

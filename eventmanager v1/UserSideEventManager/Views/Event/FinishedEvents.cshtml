@@ -1,0 +1,49 @@
+﻿@model IEnumerable<UserSideEventManager.Models.Event>
+
+@{
+    ViewData["Title"] = "FinishedEvents";
+}
+
+<h1>Finished Events</h1>
+
+
+<table table class="table bg-light" style="border-radius: 10px">
+    <thead>
+        <tr class="text-danger">
+            
+            <th>
+                @Html.DisplayNameFor(model => model.Title)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Description)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StartDate)
+            </th>
+            
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr class="font-weight-bold">
+            
+            <td>
+                @Html.DisplayFor(modelItem => item.Title)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Description)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StartDate)
+            </td>
+            
+            <td>
+                <form action="/Event/Details/@item.Id">
+                    <input type="submit" value="Details" class="btn btn-success" />
+                </form>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

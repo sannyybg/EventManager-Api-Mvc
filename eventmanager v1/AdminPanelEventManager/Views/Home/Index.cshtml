@@ -1,0 +1,79 @@
+﻿@model IEnumerable<AdminPanelEventManager.Models.HealthCheckViewModel>
+
+@{
+    ViewData["Title"] = "IndexAsync";
+}
+
+<h1>API Health Checks</h1>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Service Name
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Duration)
+            </th>
+
+            <th>
+                Service Status
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            if (item.Status == "Healthy")
+            {
+                <tr class="bg-success rounded">
+                    <td class="rounded">
+                        @Html.DisplayFor(modelItem => item.Tags)
+                    </td>
+
+                    <td class="rounded">
+                        @Html.DisplayFor(modelItem => item.Duration)
+                    </td>
+                    <td class="rounded">
+                        @Html.DisplayFor(modelItem => item.Status)
+                    </td>
+
+
+                </tr>
+            }
+            else if (item.Status == "Unhealthy")
+            {
+                <tr class="bg-danger">
+                    <td td class="rounded">
+                        @Html.DisplayFor(modelItem => item.Tags)
+                    </td>
+                    <td td class="rounded">
+                        @Html.DisplayFor(modelItem => item.Duration)
+                    </td>
+                    <td td class="rounded">
+                        @Html.DisplayFor(modelItem => item.Status)
+                    </td>
+
+                </tr>
+            }
+            else
+            {
+                <tr class="bg-warning">
+                    <td td class="rounded">
+                        @Html.DisplayFor(modelItem => item.Tags)
+                    </td>
+                    <td td class="rounded">
+                        @Html.DisplayFor(modelItem => item.Duration)
+                    </td>
+                    <td td class="rounded">
+                        @Html.DisplayFor(modelItem => item.Status)
+                    </td>
+
+                </tr>
+            }
+
+        }
+    </tbody>
+</table>
